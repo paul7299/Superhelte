@@ -22,8 +22,14 @@ public class Main {
         System.out.println("\tIndtast superheltens oprindelsesår:\n");
         int oprindelsesÅr = sc.nextInt();
 
-        System.out.println("Er superhelten et menneske? Svar 'true' for JA eller 'false' for NEJ");
-        boolean erMenneske = sc.nextBoolean();
+        System.out.println("Er superhelten et menneske? Svar ja eller nej: ");
+        String svar = sc.nextLine();
+        boolean erMenneske = false;
+        if (svar.equalsIgnoreCase("ja")) {
+            erMenneske = true;
+        } else if (svar.equalsIgnoreCase("nej")) {
+            erMenneske = false;
+        }
 
         System.out.println("Hvilken superkraft har superhelten?");
         String superkraft = sc.nextLine();

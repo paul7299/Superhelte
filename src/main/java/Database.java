@@ -1,6 +1,5 @@
 public class Database {
 
-
     Superhero[] superheroArray = new Superhero[5]; // private???
     int n = 0;
 
@@ -16,6 +15,5 @@ public class Database {
         } while (n < superheroArray.length);
 
     }
-
 
 }
