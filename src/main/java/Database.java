@@ -1,5 +1,22 @@
+import java.util.ArrayList;
+
 public class Database {
 
+    /*
+    ArrayList<Superhero> superheroArrayList = new ArrayList<>();
+    Superhero superhelt1 = new Superhero();
+    Superhero superhlt2 ....
+    superheroArrayList.add(superhelt1)
+    superheroArrayList.add(superhelt2) ....
+
+    for (Superhelt p : superheroArrayList) {
+    sout(p.getNavn(), etc ...)
+    }
+     */
+
+
+
+    //Opretter superheroArray
     private Superhero[] superheroArray = new Superhero[5]; // private???
     int n = 0;
 
