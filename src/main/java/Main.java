@@ -53,15 +53,13 @@ public class Main {
                 superheroDatabase.tilfoejSuperhelt(aliasNavn, superhelteNavn, oprindelsesÅr, erMenneske, superkraft, styrke);
 
 
-
-                // Menupt 2 - print alle superhelte
+                // Menu pt. 2 - printer alle oprettede superhelte
             } else if (brugerValg == 2) {
-
-                // Virker ikke her:
 
                 for (Superhero liste : superheroDatabase.getSuperheroArrayList()) {
                     System.out.println(liste);
                 }
+
             } else {
                 System.exit(0);
             }
@@ -69,19 +67,3 @@ public class Main {
     }
 }
 
-
-        /* for (int i = 0; i < superheroDatabase.getSuperheroArray()[i].length; i++) {
-            System.out.println("Superheltens aliasnavn: ");
-            System.out.println(superheroDatabase.getSuperheroArray()[i].getAliasNavn() + "\n");
-            System.out.println("Superheltens superheltenavn: ");
-            System.out.println(superheroDatabase.getSuperheroArray()[i].getSuperhelteNavn() + "\n");
-            System.out.println("Superheltens oprindelsesår: ");
-            System.out.println(superheroDatabase.getSuperheroArray()[i].getOprindelsesÅr() + "\n");
-            System.out.println("Er superhelten et menneske?: ");
-            System.out.println(superheroDatabase.getSuperheroArray()[i].getErMenneske() + "\n");
-            System.out.println("Superheltens superkraft: ");
-            System.out.println(superheroDatabase.getSuperheroArray()[i].getSuperkraft() + "\n");
-            System.out.println("Superheltens styrke: ");
-            System.out.println(superheroDatabase.getSuperheroArray()[i].getStyrke() + "\n");
-        }
-        */
