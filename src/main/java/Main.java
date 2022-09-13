@@ -4,11 +4,11 @@ public class Main {
     public static void main(String[] args) {
 
         int brugerValg;
+        Database superheroDatabase = new Database();
+        Scanner sc = new Scanner(System.in);
 
         do {
             //
-            Database superheroDatabase = new Database();
-            Scanner sc = new Scanner(System.in);
 
             System.out.println("-- Velkommen til SUPERHERO UNIVERSET --\n");
 
@@ -51,9 +51,6 @@ public class Main {
                 // Kigger ind i min database "superheroDatabase", bruger min setmetode "tilfoejSuperhelt" med inputs
                 superheroDatabase.tilfoejSuperhelt(aliasNavn, superhelteNavn, oprindelsesÅr, erMenneske, superkraft, styrke);
 
-                for (Superhero liste : superheroDatabase.getSuperheroArray()) {
-                    System.out.println(liste);
-                }
 
         /* for (int i = 0; i < superheroDatabase.getSuperheroArray()[i].length; i++) {
             System.out.println("Superheltens aliasnavn: ");
@@ -74,10 +71,10 @@ public class Main {
             } else if (brugerValg == 2) {
 
                 // Virker ikke her:
-                /*
+
                 for (Superhero liste : superheroDatabase.getSuperheroArray()) {
                     System.out.println(liste);
-                }*/
+                }
             } else {
                 System.exit(0);
             }
