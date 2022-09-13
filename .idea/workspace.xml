@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c01fde03-07a6-4970-abba-1136af1bc0c2" name="Changes" comment="Menupt2, dowhile &quot;hele&quot; main">
+    <list default="true" id="c01fde03-07a6-4970-abba-1136af1bc0c2" name="Changes" comment="Menupt2 virker med udskriv">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +49,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662971659429</updated>
-      <workItem from="1662971660808" duration="26816000" />
+      <workItem from="1662971660808" duration="30297000" />
     </task>
     <task id="LOCAL−00001" summary="Oprettet superhero class med attributter, konstruktør og set + get metoder&#10;&#10;Oprettet database med superheroArray og tilføj-superhelt-metode i en do while loop">
       <created>1662984787835</created>
@@ -73,7 +75,13 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1663075530224</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="Menupt2 virker med udskriv">
+      <created>1663076483274</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1663076483274</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +103,7 @@
     <MESSAGE value="lagt til if/else for boolean erMenneske input" />
     <MESSAGE value="Lavet for loop for at udskrive superheroArrayet og toString i Superhero klassen for at styre hvordan udskrivningen ser ud" />
     <MESSAGE value="Menupt2, dowhile &quot;hele&quot; main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Menupt2, dowhile &quot;hele&quot; main" />
+    <MESSAGE value="Menupt2 virker med udskriv" />
+    <option name="LAST_COMMIT_MESSAGE" value="Menupt2 virker med udskriv" />
   </component>
 </project>

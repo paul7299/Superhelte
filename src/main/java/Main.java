@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        int brugerValg;
         Database superheroDatabase = new Database();
         Scanner sc = new Scanner(System.in);
+        int brugerValg;
 
         do {
             //
@@ -18,6 +18,7 @@ public class Main {
                     "\t2. Udskriv alle superhelter\n" +
                     "\t9. Afslut program" +
                     "\n----\n");
+
             brugerValg = sc.nextInt();
             sc.nextLine();
 
@@ -52,6 +53,23 @@ public class Main {
                 superheroDatabase.tilfoejSuperhelt(aliasNavn, superhelteNavn, oprindelsesÅr, erMenneske, superkraft, styrke);
 
 
+
+                // Menupt 2 - print alle superhelte
+            } else if (brugerValg == 2) {
+
+                // Virker ikke her:
+
+                for (Superhero liste : superheroDatabase.getSuperheroArrayList()) {
+                    System.out.println(liste);
+                }
+            } else {
+                System.exit(0);
+            }
+        } while (brugerValg != 9);
+    }
+}
+
+
         /* for (int i = 0; i < superheroDatabase.getSuperheroArray()[i].length; i++) {
             System.out.println("Superheltens aliasnavn: ");
             System.out.println(superheroDatabase.getSuperheroArray()[i].getAliasNavn() + "\n");
@@ -67,17 +85,3 @@ public class Main {
             System.out.println(superheroDatabase.getSuperheroArray()[i].getStyrke() + "\n");
         }
         */
-                // Menupt 2 - print alle superhelte
-            } else if (brugerValg == 2) {
-
-                // Virker ikke her:
-
-                for (Superhero liste : superheroDatabase.getSuperheroArray()) {
-                    System.out.println(liste);
-                }
-            } else {
-                System.exit(0);
-            }
-        } while (brugerValg != 9);
-    }
-}
