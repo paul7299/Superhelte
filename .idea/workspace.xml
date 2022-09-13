@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c01fde03-07a6-4970-abba-1136af1bc0c2" name="Changes" comment="Oprettet superhero class med attributter, konstruktør og set + get metoder&#10;&#10;Oprettet database med superheroArray og tilføj-superhelt-metode i en do while loop">
+    <list default="true" id="c01fde03-07a6-4970-abba-1136af1bc0c2" name="Changes" comment="lagt til if/else for boolean erMenneske input">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Superhero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Superhero.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662971659429</updated>
-      <workItem from="1662971660808" duration="12703000" />
+      <workItem from="1662971660808" duration="21041000" />
     </task>
     <task id="LOCAL−00001" summary="Oprettet superhero class med attributter, konstruktør og set + get metoder&#10;&#10;Oprettet database med superheroArray og tilføj-superhelt-metode i en do while loop">
       <created>1662984787835</created>
@@ -57,7 +58,13 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1662984787835</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="lagt til if/else for boolean erMenneske input">
+      <created>1662985621258</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1662985621258</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -76,6 +83,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Oprettet superhero class med attributter, konstruktør og set + get metoder&#10;&#10;Oprettet database med superheroArray og tilføj-superhelt-metode i en do while loop" />
-    <option name="LAST_COMMIT_MESSAGE" value="Oprettet superhero class med attributter, konstruktør og set + get metoder&#10;&#10;Oprettet database med superheroArray og tilføj-superhelt-metode i en do while loop" />
+    <MESSAGE value="lagt til if/else for boolean erMenneske input" />
+    <option name="LAST_COMMIT_MESSAGE" value="lagt til if/else for boolean erMenneske input" />
   </component>
 </project>

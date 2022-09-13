@@ -68,6 +68,15 @@ public class Superhero {
         return styrke;
     }
 
-    // public void toString() {}
+    public String toString() {
+        return ("----\n" +
+                "\t- Alias: " + aliasNavn + "\n"+
+                "\t- Superheltenavn: " + superhelteNavn + "\n" +
+                "\t- Oprindelsesår: " + oprindelsesÅr + "\n" +
+                "\t- Er menneske: " + erMenneske + "\n" +
+                "\t- Superkraft: " + superkraft + "\n" +
+                "\t- Styrke: " + styrke + "\n" +
+                "----\n");
+    }
 
 }
