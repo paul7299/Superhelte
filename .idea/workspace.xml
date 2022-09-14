@@ -47,7 +47,7 @@
       <updated>1662971659429</updated>
       <workItem from="1662971660808" duration="32189000" />
       <workItem from="1663138586547" duration="24000" />
-      <workItem from="1663144703550" duration="4710000" />
+      <workItem from="1663144703550" duration="5179000" />
     </task>
     <task id="LOCAL−00001" summary="Oprettet superhero class med attributter, konstruktør og set + get metoder&#10;&#10;Oprettet database med superheroArray og tilføj-superhelt-metode i en do while loop">
       <created>1662984787835</created>
@@ -97,7 +97,13 @@
       <option name="presentableId" value="LOCAL−00008" />
       <updated>1663149385650</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL−00009" summary="Menu pt 3. Brugeren kan søge efter en superhelts supernavn og få outputtet data om superhelten">
+      <created>1663149882194</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1663149882194</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
