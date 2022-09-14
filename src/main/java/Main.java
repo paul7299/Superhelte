@@ -16,6 +16,7 @@ public class Main {
             System.out.println("Du har to muligheder: \n" +
                     "\t1. Opret en superhelt\n" +
                     "\t2. Udskriv alle superhelter\n" +
+                    "\t3. Søg efter en superhelt\n"+
                     "\t9. Afslut program" +
                     "\n----\n");
 
@@ -52,15 +53,28 @@ public class Main {
                 // Kigger ind i min database "superheroDatabase", bruger min setmetode "tilfoejSuperhelt" med inputs
                 superheroDatabase.tilfoejSuperhelt(aliasNavn, superhelteNavn, oprindelsesÅr, erMenneske, superkraft, styrke);
 
-
-                // Menu pt. 2 - printer alle oprettede superhelte
-            } else if (brugerValg == 2) {
+            }
+            // MENU PT. 3 - printer alle oprettede superhelte
+            else if (brugerValg == 2) {
 
                 for (Superhero liste : superheroDatabase.getSuperheroArrayList()) {
                     System.out.println(liste);
                 }
+            }
 
-            } else {
+            // MENU PT. 3
+            else if (brugerValg == 3) {
+                System.out.println("\tIndtast navn du vil søge efter: ");
+                String søgeNavn = sc.nextLine();
+                Superhero s = superheroDatabase.findSuperhelt(søgeNavn);
+                System.out.println("\t Vi har fundet din superhelt: \n"
+                        + s);
+                if (s == null) {
+                    System.out.println("\tKunne ikke finde superhelten. ");
+                }
+
+            }
+            else {
                 System.exit(0);
             }
         } while (brugerValg != 9);

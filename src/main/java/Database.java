@@ -24,6 +24,19 @@ public class Database {
         return superheroArrayList;
     }
 
+    public Superhero findSuperhelt(String søgeNavn) {
+        for (Superhero n : superheroArrayList) {
+            if (n.getSuperhelteNavn().contains(søgeNavn)) {
+                return n;
+            }
+            else if (n.getSuperhelteNavn().equalsIgnoreCase(søgeNavn)) {
+                return n;
+            }
+        } return null;
+
+    }
+
+
 }
 
 
