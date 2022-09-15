@@ -2,11 +2,13 @@ import java.util.Scanner;
 
 public class UserInterface {
 
+    // Objektet UserInterface's attribut: (kun databasen)
     private Database superheroDatabase;
-    Scanner sc = new Scanner(System.in);
+    Scanner sc;
 
     public UserInterface() {
         superheroDatabase = new Database();
+        sc = new Scanner(System.in);
     }
 
     public void startProgram() {

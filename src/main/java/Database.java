@@ -40,16 +40,3 @@ public class Database {
 
 
 }
-
-
-    /*
-
-    Superhero superhelt1 = new Superhero();
-    Superhero superhlt2 ....
-    superheroArrayList.add(superhelt1)
-    superheroArrayList.add(superhelt2) ....
-
-    for (Superhelt p : superheroArrayList) {
-    sout(p.getNavn(), etc ...)
-    }
-     */

@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c01fde03-07a6-4970-abba-1136af1bc0c2" name="Changes" comment="commit dog picture">
-      <change afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+    <list default="true" id="c01fde03-07a6-4970-abba-1136af1bc0c2" name="Changes" comment="Userinterface class og objekt oprettes, og menu, tilfoej, opret etc er delt op i metoder der inde&#10;&#10;Det hele kaldes i main">
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +50,7 @@
       <workItem from="1662971660808" duration="32189000" />
       <workItem from="1663138586547" duration="24000" />
       <workItem from="1663144703550" duration="6321000" />
-      <workItem from="1663236828076" duration="7350000" />
+      <workItem from="1663236828076" duration="7940000" />
     </task>
     <task id="LOCAL−00001" summary="Oprettet superhero class med attributter, konstruktør og set + get metoder&#10;&#10;Oprettet database med superheroArray og tilføj-superhelt-metode i en do while loop">
       <created>1662984787835</created>
@@ -121,7 +118,13 @@
       <option name="presentableId" value="LOCAL−00011" />
       <updated>1663150128197</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL−00012" summary="Userinterface class og objekt oprettes, og menu, tilfoej, opret etc er delt op i metoder der inde&#10;&#10;Det hele kaldes i main">
+      <created>1663245812612</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1663245812612</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +151,7 @@
     <MESSAGE value="Brugeren kan nu oprette et flertal superhelte ved menu pt. 1, samt vise en liste af alle superhelte ved menu pt 2" />
     <MESSAGE value="Menu pt 3. Brugeren kan søge efter en superhelts supernavn og få outputtet data om superhelten" />
     <MESSAGE value="commit dog picture" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit dog picture" />
+    <MESSAGE value="Userinterface class og objekt oprettes, og menu, tilfoej, opret etc er delt op i metoder der inde&#10;&#10;Det hele kaldes i main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Userinterface class og objekt oprettes, og menu, tilfoej, opret etc er delt op i metoder der inde&#10;&#10;Det hele kaldes i main" />
   </component>
 </project>
