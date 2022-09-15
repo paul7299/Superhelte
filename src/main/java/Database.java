@@ -5,6 +5,7 @@ public class Database {
 
     // Opretter superheroArrayLIST
     private ArrayList<Superhero> superheroArrayList = new ArrayList<>();
+    private ArrayList<Superhero> soegeResultat = new ArrayList<>();
 
 
     // Opretter superheroArray
@@ -20,6 +21,7 @@ public class Database {
             superheroArrayList.add(superhelt);
     }
 
+    // Omdøb "hentAllePersoner"
     public ArrayList<Superhero> getSuperheroArrayList() {
         return superheroArrayList;
     }

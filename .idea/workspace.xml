@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c01fde03-07a6-4970-abba-1136af1bc0c2" name="Changes" comment="Menu pt 3. Brugeren kan søge efter en superhelts supernavn og få outputtet data om superhelten" />
+    <list default="true" id="c01fde03-07a6-4970-abba-1136af1bc0c2" name="Changes" comment="commit dog picture">
+      <change afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +52,8 @@
       <updated>1662971659429</updated>
       <workItem from="1662971660808" duration="32189000" />
       <workItem from="1663138586547" duration="24000" />
-      <workItem from="1663144703550" duration="5179000" />
+      <workItem from="1663144703550" duration="6321000" />
+      <workItem from="1663236828076" duration="7350000" />
     </task>
     <task id="LOCAL−00001" summary="Oprettet superhero class med attributter, konstruktør og set + get metoder&#10;&#10;Oprettet database med superheroArray og tilføj-superhelt-metode i en do while loop">
       <created>1662984787835</created>
@@ -103,7 +109,19 @@
       <option name="presentableId" value="LOCAL−00009" />
       <updated>1663149882194</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL−00010" summary="Menu pt 3. Brugeren kan søge efter en superhelts supernavn og få outputtet data om superhelten">
+      <created>1663149989074</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1663149989074</updated>
+    </task>
+    <task id="LOCAL−00011" summary="commit dog picture">
+      <created>1663150128197</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1663150128197</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +147,7 @@
     <MESSAGE value="Koden omskrevet til at bruge ArrayList" />
     <MESSAGE value="Brugeren kan nu oprette et flertal superhelte ved menu pt. 1, samt vise en liste af alle superhelte ved menu pt 2" />
     <MESSAGE value="Menu pt 3. Brugeren kan søge efter en superhelts supernavn og få outputtet data om superhelten" />
-    <option name="LAST_COMMIT_MESSAGE" value="Menu pt 3. Brugeren kan søge efter en superhelts supernavn og få outputtet data om superhelten" />
+    <MESSAGE value="commit dog picture" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit dog picture" />
   </component>
 </project>
