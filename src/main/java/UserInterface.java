@@ -24,7 +24,7 @@ public class UserInterface {
                     "\t9. Afslut program" +
                     "\n----\n");
 
-            brugerValg = sc.nextInt();
+            brugerValg = readInt();
 
             /*
             try {
@@ -103,7 +103,6 @@ public class UserInterface {
     public void menuRedigerSuperhelt() {
 
 
-
         // Find den superhero du vil redigere
         System.out.println("\tSøge efter superhelt du vil redigere: ");
         String søgeNavn = sc.nextLine();
@@ -123,6 +122,7 @@ public class UserInterface {
         // Indtast nye data
         System.out.println("Indtast ny superhelt data (TRYK ENTER HVIS DET IKKE SKAL REDIGERES).\n");
 
+        // Nyt alias navn
         System.out.println("Superheltens nuværende alias navn: " + editingSuperhelt.getAliasNavn());
         System.out.print("\tIndtast NYT alias navn: ");
         String aliasNavnNy = sc.nextLine();
@@ -130,6 +130,7 @@ public class UserInterface {
             editingSuperhelt.setAliasNavn(aliasNavnNy);
         }
 
+        // Nyt superhelt navn
         System.out.println("Superheltens nuværende superheltnavn: " + editingSuperhelt.getSuperhelteNavn());
         System.out.print("\tNYT superheltenavn: ");
         String superhelteNavnNy = sc.nextLine();
@@ -137,14 +138,16 @@ public class UserInterface {
             editingSuperhelt.setSuperhelteNavn(superhelteNavnNy);
         }
 
-        System.out.println("Superheltens nuværende superkraft: " + editingSuperhelt.getSuperhelteNavn());
+        // Ny superkraft
+        System.out.println("Superheltens nuværende superkraft: " + editingSuperhelt.getSuperkraft());
         System.out.print("\tNY superkraft: ");
         String superkraftNy = sc.nextLine();
         if (!superkraftNy.isEmpty()) {
             editingSuperhelt.setSuperkraft(superkraftNy);
         }
 
-        System.out.print("Er superhelten et menneske inden redigering?: ");
+        // Ny menneske-status
+        System.out.print("Er superhelten et menneske inden redigering: ");
         if (editingSuperhelt.getErMenneske() == true) {
             System.out.println("Ja. ");
         } else if (editingSuperhelt.getErMenneske() == false) {
@@ -163,22 +166,24 @@ public class UserInterface {
             editingSuperhelt.setMenneske(erMenneskeNy);
         }
 
+        sc.nextLine();
+
+        // Nyt oprindelsesår
         System.out.println("Superheltens nuværende oprindelsesår: " + editingSuperhelt.getOprindelsesÅr());
         System.out.print("\tNYT oprindelsesår: ");
-        int oprindelsesÅrNy = readInt();
+        String oprindelsesÅrNy = sc.nextLine();
         if (!oprindelsesÅrNy.isEmpty()) {
-            editingSuperhelt.setSuperkraft(superkraftNy);
+            editingSuperhelt.setOprindelsesÅr(Integer.parseInt(oprindelsesÅrNy));
         }
 
-        System.out.print("\tNY styrke? ");
-        double styrkeNy = readDouble();
+        // Ny styrke
+        System.out.println("Superheltens nuværende styrke: " + editingSuperhelt.getStyrke());
+        System.out.print("\tIndtast ny styrke: ");
+        String styrkeNy = sc.nextLine();
+        if (!styrkeNy.isEmpty()) {
+            editingSuperhelt.setStyrke(Integer.parseInt(styrkeNy));
+        }
 
-
-        // Her skal bruges set-funktion tror jeg
-        // Kigger ind i min database "superheroDatabase", bruger min setmetode "tilfoejSuperhelt" med inputs
-        /*
-        superheroDatabase.tilfoejSuperhelt(aliasNavn, superhelteNavn, oprindelsesÅr, erMenneske, superkraft, styrke);
-        */
     }
 
     public int readInt() {

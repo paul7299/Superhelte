@@ -70,7 +70,7 @@ public class Superhero {
 
     public String toString() {
         return ("----\n" +
-                "\t- Alias: " + aliasNavn + "\n"+
+                "\t- Alias navn: " + aliasNavn + "\n"+
                 "\t- Superheltenavn: " + superhelteNavn + "\n" +
                 "\t- Oprindelsesår: " + oprindelsesÅr + "\n" +
                 "\t- Er menneske: " + erMenneske + "\n" +
