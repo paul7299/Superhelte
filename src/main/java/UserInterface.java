@@ -102,10 +102,16 @@ public class UserInterface {
 
     public void menuRedigerSuperhelt() {
 
+
+
         // Find den superhero du vil redigere
         System.out.println("\tSøge efter superhelt du vil redigere: ");
         String søgeNavn = sc.nextLine();
+
         Superhero editingSuperhelt = superheroDatabase.findSuperhelt(søgeNavn);
+
+        // editingSuperhelt er i dette tilfælde en "pointer" - og retter faktisk direkte i den originale superhelt
+
         if (editingSuperhelt != null) {
             System.out.println("\t Vi har fundet din superhelt: \n"
                     + editingSuperhelt);
@@ -156,17 +162,17 @@ public class UserInterface {
         if (!svar.isEmpty()) {
             editingSuperhelt.setMenneske(erMenneskeNy);
         }
-/*
+
         System.out.println("Superheltens nuværende oprindelsesår: " + editingSuperhelt.getOprindelsesÅr());
         System.out.print("\tNYT oprindelsesår: ");
-        int oprindelsesÅrNy = sc.nextLine();
+        int oprindelsesÅrNy = readInt();
         if (!oprindelsesÅrNy.isEmpty()) {
             editingSuperhelt.setSuperkraft(superkraftNy);
         }
 
         System.out.print("\tNY styrke? ");
-        double styrkeNy = sc.nextDouble();
-*/
+        double styrkeNy = readDouble();
+
 
         // Her skal bruges set-funktion tror jeg
         // Kigger ind i min database "superheroDatabase", bruger min setmetode "tilfoejSuperhelt" med inputs
@@ -180,7 +186,6 @@ public class UserInterface {
             String text = sc.next();
             System.out.println("\t*** Du må ikke indtaste " + text + ". Det skal være et heltal.");
         } return sc.nextInt();
-
     }
 
     public double readDouble() {
@@ -188,7 +193,6 @@ public class UserInterface {
             String text = sc.next();
             System.out.println("\t*** Du må ikke indtaste " + text + ". Det skal være et tal.");
         } return sc.nextDouble();
-
     }
 
 
