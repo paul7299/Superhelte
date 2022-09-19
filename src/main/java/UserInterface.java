@@ -17,15 +17,25 @@ public class UserInterface {
         while (brugerValg != 9) {
             System.out.println("-- Velkommen til SUPERHERO UNIVERSET --\n");
             System.out.println("Du har to muligheder: \n" +
-                "\t1. Opret en superhelt\n" +
-                "\t2. Udskriv alle superhelter\n" +
-                "\t3. Søg efter en superhelt\n" +
-                "\t9. Afslut program" +
-                "\n----\n");
+                    "\t1. Opret en superhelt\n" +
+                    "\t2. Udskriv alle superhelter\n" +
+                    "\t3. Søg efter en superhelt\n" +
+                    "\t4. Rediger superhelt.\n" +
+                    "\t9. Afslut program" +
+                    "\n----\n");
 
-        brugerValg = sc.nextInt();
-        sc.nextLine();
-        menu(brugerValg);
+            brugerValg = sc.nextInt();
+
+            /*
+            try {
+                checkInteger(brugerValg);
+            }
+            catch (IllegalArgumentException){
+                System.out.println(e.get);
+            } */
+
+            sc.nextLine();
+            menu(brugerValg);
         }
     }
 
@@ -36,6 +46,8 @@ public class UserInterface {
             menuVisSuperhelter();
         else if (brugerValg == 3)
             menuSoegSuperhelt();
+        else if (brugerValg == 4)
+            menuRedigerSuperhelt();
 
     }
 
@@ -60,10 +72,10 @@ public class UserInterface {
         }
 
         System.out.print("\tIndtast superheltens oprindelsesår: ");
-        int oprindelsesÅr = sc.nextInt();
+        int oprindelsesÅr = readInt();
 
         System.out.print("\tHvilken styrke har superhelten? ");
-        double styrke = sc.nextDouble();
+        double styrke = readDouble();
 
 
         // Kigger ind i min database "superheroDatabase", bruger min setmetode "tilfoejSuperhelt" med inputs
@@ -87,4 +99,116 @@ public class UserInterface {
             System.out.println("\tKunne ikke finde superhelten. ");
         }
     }
+
+    public void menuRedigerSuperhelt() {
+
+        // Find den superhero du vil redigere
+        System.out.println("\tSøge efter superhelt du vil redigere: ");
+        String søgeNavn = sc.nextLine();
+        Superhero editingSuperhelt = superheroDatabase.findSuperhelt(søgeNavn);
+        if (editingSuperhelt != null) {
+            System.out.println("\t Vi har fundet din superhelt: \n"
+                    + editingSuperhelt);
+        } else if (editingSuperhelt == null) {
+            System.out.println("\tKunne ikke finde superhelten. \n");
+        }
+
+
+        // Indtast nye data
+        System.out.println("Indtast ny superhelt data (TRYK ENTER HVIS DET IKKE SKAL REDIGERES).\n");
+
+        System.out.println("Superheltens nuværende alias navn: " + editingSuperhelt.getAliasNavn());
+        System.out.print("\tIndtast NYT alias navn: ");
+        String aliasNavnNy = sc.nextLine();
+        if (!aliasNavnNy.isEmpty()) {
+            editingSuperhelt.setAliasNavn(aliasNavnNy);
+        }
+
+        System.out.println("Superheltens nuværende superheltnavn: " + editingSuperhelt.getSuperhelteNavn());
+        System.out.print("\tNYT superheltenavn: ");
+        String superhelteNavnNy = sc.nextLine();
+        if (!superhelteNavnNy.isEmpty()) {
+            editingSuperhelt.setSuperhelteNavn(superhelteNavnNy);
+        }
+
+        System.out.println("Superheltens nuværende superkraft: " + editingSuperhelt.getSuperhelteNavn());
+        System.out.print("\tNY superkraft: ");
+        String superkraftNy = sc.nextLine();
+        if (!superkraftNy.isEmpty()) {
+            editingSuperhelt.setSuperkraft(superkraftNy);
+        }
+
+        System.out.print("Er superhelten et menneske inden redigering?: ");
+        if (editingSuperhelt.getErMenneske() == true) {
+            System.out.println("Ja. ");
+        } else if (editingSuperhelt.getErMenneske() == false) {
+            System.out.println("Nej. ");
+        }
+
+        System.out.print("\tSkal superhelt være menneske?: ");
+        boolean erMenneskeNy = false;
+        String svar = sc.next();
+        if (svar.equalsIgnoreCase("ja")) {
+            erMenneskeNy = true;
+        } else if (svar.equalsIgnoreCase("nej")) {
+            erMenneskeNy = false;
+        }
+        if (!svar.isEmpty()) {
+            editingSuperhelt.setMenneske(erMenneskeNy);
+        }
+/*
+        System.out.println("Superheltens nuværende oprindelsesår: " + editingSuperhelt.getOprindelsesÅr());
+        System.out.print("\tNYT oprindelsesår: ");
+        int oprindelsesÅrNy = sc.nextLine();
+        if (!oprindelsesÅrNy.isEmpty()) {
+            editingSuperhelt.setSuperkraft(superkraftNy);
+        }
+
+        System.out.print("\tNY styrke? ");
+        double styrkeNy = sc.nextDouble();
+*/
+
+        // Her skal bruges set-funktion tror jeg
+        // Kigger ind i min database "superheroDatabase", bruger min setmetode "tilfoejSuperhelt" med inputs
+        /*
+        superheroDatabase.tilfoejSuperhelt(aliasNavn, superhelteNavn, oprindelsesÅr, erMenneske, superkraft, styrke);
+        */
+    }
+
+    public int readInt() {
+        while (!sc.hasNextInt()) {
+            String text = sc.next();
+            System.out.println("\t*** Du må ikke indtaste " + text + ". Det skal være et heltal.");
+        } return sc.nextInt();
+
+    }
+
+    public double readDouble() {
+        while (!sc.hasNextDouble()) {
+            String text = sc.next();
+            System.out.println("\t*** Du må ikke indtaste " + text + ". Det skal være et tal.");
+        } return sc.nextDouble();
+
+    }
+
+
+/*
+    String input;
+    boolean wrongInput = true;
+    while (wrongInput) {
+        try {
+            input = sc.nextLine();
+            int oprindelsesÅr = Integer.parseInt(input);
+            wrongInput = false;
+        } catch (NumberFormatException e) {
+            System.out.println("Du SKAL indtaste et tal");
+        }
+    } */
+
+    /*
+    public void checkInteger(int brugerValg) {
+        if (brugerValg > 9) {
+            throw new IllegalArgumentException("*** Kun tal mindre end 9.");
+        }
+    } */
 }
