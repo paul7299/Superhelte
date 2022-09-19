@@ -63,13 +63,7 @@ public class UserInterface {
         String superkraft = sc.nextLine();
 
         System.out.print("\tEr superhelten et menneske? Svar ja eller nej: ");
-        boolean erMenneske = false;
-        String svar = sc.next();
-        if (svar.equalsIgnoreCase("ja")) {
-            erMenneske = true;
-        } else if (svar.equalsIgnoreCase("nej")) {
-            erMenneske = false;
-        }
+        boolean erMenneske = scanJaNejTilBoolean();
 
         System.out.print("\tIndtast superheltens oprindelsesår: ");
         int oprindelsesÅr = readInt();
@@ -101,7 +95,6 @@ public class UserInterface {
     }
 
     public void menuRedigerSuperhelt() {
-
 
         // Find den superhero du vil redigere
         System.out.println("\tSøge efter superhelt du vil redigere: ");
@@ -154,17 +147,8 @@ public class UserInterface {
             System.out.println("Nej. ");
         }
 
-        System.out.print("\tSkal superhelt være menneske?: ");
-        boolean erMenneskeNy = false;
-        String svar = sc.next();
-        if (svar.equalsIgnoreCase("ja")) {
-            erMenneskeNy = true;
-        } else if (svar.equalsIgnoreCase("nej")) {
-            erMenneskeNy = false;
-        }
-        if (!svar.isEmpty()) {
-            editingSuperhelt.setMenneske(erMenneskeNy);
-        }
+        System.out.print("\tSkal superhelten være et menneske? (svar ja eller nej): ");
+        boolean erMenneskeNy = scanJaNejTilBoolean();
 
         sc.nextLine();
 
@@ -201,6 +185,18 @@ public class UserInterface {
     }
 
 
+    public boolean scanJaNejTilBoolean() {
+        String text = sc.next();
+        boolean b = false;
+        if (text.equalsIgnoreCase("ja")) {
+            b = true;
+        } else if (text.equalsIgnoreCase("nej")){
+            b = false;
+        } else {
+            System.out.println("*** Forkert indtasting! Du skal indtaste JA eller NEJ.");
+            scanJaNejTilBoolean();
+        } return b;
+    }
 /*
     String input;
     boolean wrongInput = true;
