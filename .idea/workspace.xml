@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c01fde03-07a6-4970-abba-1136af1bc0c2" name="Changes" comment="Edit-funktionalitet færdig">
+    <list default="true" id="c01fde03-07a6-4970-abba-1136af1bc0c2" name="Changes" comment="Ny metode: scanner String ja/nej og returnerer boolean true false">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
     </list>
@@ -52,7 +52,7 @@
       <workItem from="1663138586547" duration="24000" />
       <workItem from="1663144703550" duration="6321000" />
       <workItem from="1663236828076" duration="15582000" />
-      <workItem from="1663570709310" duration="12709000" />
+      <workItem from="1663570709310" duration="15723000" />
     </task>
     <task id="LOCAL−00001" summary="Oprettet superhero class med attributter, konstruktør og set + get metoder&#10;&#10;Oprettet database med superheroArray og tilføj-superhelt-metode i en do while loop">
       <created>1662984787835</created>
@@ -162,7 +162,13 @@
       <option name="presentableId" value="LOCAL−00018" />
       <updated>1663583957219</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL−00019" summary="Ny metode: scanner String ja/nej og returnerer boolean true false">
+      <created>1663585868482</created>
+      <option name="number" value="LOCAL−00019" />
+      <option name="presentableId" value="LOCAL−00019" />
+      <updated>1663585868482</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +200,7 @@
     <MESSAGE value="readNumber() lavet" />
     <MESSAGE value="readInt + readDouble" />
     <MESSAGE value="Edit-funktionalitet færdig" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit-funktionalitet færdig" />
+    <MESSAGE value="Ny metode: scanner String ja/nej og returnerer boolean true false" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ny metode: scanner String ja/nej og returnerer boolean true false" />
   </component>
 </project>

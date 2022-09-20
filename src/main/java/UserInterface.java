@@ -39,7 +39,7 @@ public class UserInterface {
         }
     }
 
-    public void menu(int brugerValg) {
+    /*public void menu(int brugerValg) {
         if (brugerValg == 1)
             menuTilfoejSuperhelt();
         else if (brugerValg == 2)
@@ -49,6 +49,20 @@ public class UserInterface {
         else if (brugerValg == 4)
             menuRedigerSuperhelt();
 
+    }*/
+
+    // switch menu
+    public void menu(int brugerValg) {
+        switch (brugerValg) {
+            case 1: menuTilfoejSuperhelt();
+            break;
+            case 2: menuVisSuperhelter();
+            break;
+            case 3: menuSoegSuperhelt();
+            break;
+            case 4: menuRedigerSuperhelt();
+            break;
+        }
     }
 
     public void menuTilfoejSuperhelt() {
@@ -173,7 +187,7 @@ public class UserInterface {
     public int readInt() {
         while (!sc.hasNextInt()) {
             String text = sc.next();
-            System.out.println("\t*** Du må ikke indtaste " + text + ". Det skal være et heltal.");
+            System.out.println("\t*** Du må ikke indtaste: \"" + text + "\". Det skal være et heltal.");
         } return sc.nextInt();
     }
 
