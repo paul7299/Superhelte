@@ -115,6 +115,7 @@ public class UserInterface {
             System.out.println("\tKunne ikke finde superhelten. \n");
         }
 
+        // System.out.println("Vil du redigere denne superhero? Indtast ja/nej");
 
         // Indtast nye data
         System.out.println("Indtast ny superhelt data (TRYK ENTER HVIS DET IKKE SKAL REDIGERES).\n");
@@ -181,12 +182,12 @@ public class UserInterface {
         System.out.println("\tSøge efter superhelt du vil SLETTE: ");
         String søgeNavn = sc.nextLine();
 
-        Superhero editingSuperhelt = superheroDatabase.findSuperhelt(søgeNavn);
+        Superhero deletingSuperhelt = superheroDatabase.findSuperhelt(søgeNavn);
 
-        if (editingSuperhelt != null) {
+        if (deletingSuperhelt != null) {
             System.out.println("\t Vi har fundet din superhelt: \n"
-                    + editingSuperhelt);
-        } else if (editingSuperhelt == null) {
+                    + deletingSuperhelt);
+        } else if (deletingSuperhelt == null) {
             System.out.println("\tKunne ikke finde superhelten. \n");
         }
 
@@ -194,7 +195,10 @@ public class UserInterface {
         String svar = sc.nextLine();
 
         if (svar.equalsIgnoreCase("ja")) {
-            superheroDatabase.getSuperheroArrayList().remove(editingSuperhelt);
+            int n;
+            n = superheroDatabase.getSuperheroArrayList().indexOf(deletingSuperhelt);
+                superheroDatabase.getSuperheroArrayList().remove(n);
+
         } else if (svar.equalsIgnoreCase("nej")) {
 
         }

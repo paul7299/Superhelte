@@ -38,6 +38,8 @@ public class Database {
     }
 
 
+
+
         /* Metode for at redigere superhelt
         public void redigerSuperhelt(String aliasNavn, String superhelteNavn, int oprindelsesÅr, boolean erMenneske,
         String superkraft, double styrke) {

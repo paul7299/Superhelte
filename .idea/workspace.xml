@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c01fde03-07a6-4970-abba-1136af1bc0c2" name="Changes" comment="Oprettet testklasse med test af Database-metodene">
+    <list default="true" id="c01fde03-07a6-4970-abba-1136af1bc0c2" name="Changes" comment="Oprettet slet-metode, det virker">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +53,7 @@
       <workItem from="1663144703550" duration="6321000" />
       <workItem from="1663236828076" duration="15582000" />
       <workItem from="1663570709310" duration="20305000" />
-      <workItem from="1663743254413" duration="7799000" />
+      <workItem from="1663743254413" duration="8833000" />
     </task>
     <task id="LOCAL−00001" summary="Oprettet superhero class med attributter, konstruktør og set + get metoder&#10;&#10;Oprettet database med superheroArray og tilføj-superhelt-metode i en do while loop">
       <created>1662984787835</created>
@@ -180,7 +181,13 @@
       <option name="presentableId" value="LOCAL−00021" />
       <updated>1663752658010</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL−00022" summary="Oprettet slet-metode, det virker">
+      <created>1663753388694</created>
+      <option name="number" value="LOCAL−00022" />
+      <option name="presentableId" value="LOCAL−00022" />
+      <updated>1663753388694</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +223,7 @@
     <MESSAGE value="lille ændring" />
     <MESSAGE value="Menu omgjort til Switch i stedet for if else" />
     <MESSAGE value="Oprettet testklasse med test af Database-metodene" />
-    <option name="LAST_COMMIT_MESSAGE" value="Oprettet testklasse med test af Database-metodene" />
+    <MESSAGE value="Oprettet slet-metode, det virker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Oprettet slet-metode, det virker" />
   </component>
 </project>
