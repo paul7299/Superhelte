@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c01fde03-07a6-4970-abba-1136af1bc0c2" name="Changes" comment="Ny metode: scanner String ja/nej og returnerer boolean true false">
+    <list default="true" id="c01fde03-07a6-4970-abba-1136af1bc0c2" name="Changes" comment="Menu omgjort til Switch i stedet for if else">
+      <change afterPath="$PROJECT_DIR$/src/test/java/SuperheroTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +55,8 @@
       <workItem from="1663138586547" duration="24000" />
       <workItem from="1663144703550" duration="6321000" />
       <workItem from="1663236828076" duration="15582000" />
-      <workItem from="1663570709310" duration="15723000" />
+      <workItem from="1663570709310" duration="20305000" />
+      <workItem from="1663743254413" duration="6760000" />
     </task>
     <task id="LOCAL−00001" summary="Oprettet superhero class med attributter, konstruktør og set + get metoder&#10;&#10;Oprettet database med superheroArray og tilføj-superhelt-metode i en do while loop">
       <created>1662984787835</created>
@@ -168,7 +172,13 @@
       <option name="presentableId" value="LOCAL−00019" />
       <updated>1663585868482</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL−00020" summary="Menu omgjort til Switch i stedet for if else">
+      <created>1663670779935</created>
+      <option name="number" value="LOCAL−00020" />
+      <option name="presentableId" value="LOCAL−00020" />
+      <updated>1663670779935</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +211,8 @@
     <MESSAGE value="readInt + readDouble" />
     <MESSAGE value="Edit-funktionalitet færdig" />
     <MESSAGE value="Ny metode: scanner String ja/nej og returnerer boolean true false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ny metode: scanner String ja/nej og returnerer boolean true false" />
+    <MESSAGE value="lille ændring" />
+    <MESSAGE value="Menu omgjort til Switch i stedet for if else" />
+    <option name="LAST_COMMIT_MESSAGE" value="Menu omgjort til Switch i stedet for if else" />
   </component>
 </project>

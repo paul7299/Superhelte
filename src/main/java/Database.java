@@ -30,11 +30,12 @@ public class Database {
         for (Superhero n : superheroArrayList) {
             if (n.getSuperhelteNavn().contains(søgeNavn)) {
                 return n;
-            }
-            else if (n.getSuperhelteNavn().equalsIgnoreCase(søgeNavn)) {
+            } else if (n.getSuperhelteNavn().equalsIgnoreCase(søgeNavn)) {
                 return n;
             }
-        } return null;
+        }
+        return null;
+    }
 
 
         /* Metode for at redigere superhelt
@@ -48,5 +49,3 @@ public class Database {
 
     }
 
-
-}

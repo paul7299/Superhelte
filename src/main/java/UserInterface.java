@@ -39,18 +39,6 @@ public class UserInterface {
         }
     }
 
-    /*public void menu(int brugerValg) {
-        if (brugerValg == 1)
-            menuTilfoejSuperhelt();
-        else if (brugerValg == 2)
-            menuVisSuperhelter();
-        else if (brugerValg == 3)
-            menuSoegSuperhelt();
-        else if (brugerValg == 4)
-            menuRedigerSuperhelt();
-
-    }*/
-
     // switch menu
     public void menu(int brugerValg) {
         switch (brugerValg) {
@@ -211,6 +199,8 @@ public class UserInterface {
             scanJaNejTilBoolean();
         } return b;
     }
+
+
 /*
     String input;
     boolean wrongInput = true;
