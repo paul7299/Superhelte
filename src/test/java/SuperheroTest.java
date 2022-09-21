@@ -3,6 +3,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -17,10 +18,14 @@ public class SuperheroTest {
     void setUp() {
         sdb = new Database();
         UserInterface ui = new UserInterface();
+
         s1 = new Superhero("paul", "superpaul", 2000, true, "spise", 50);
         s2 = new Superhero("line", "superline", 2005, false, "danse", 70);
-        sdb.getSuperheroArrayList().add(s1);
-        sdb.getSuperheroArrayList().add(s2);
+
+        /* sdb.getSuperheroArrayList().add(s1);
+        sdb.getSuperheroArrayList().add(s2); */
+
+        sdb.getSuperheroArrayList().addAll(List.of(s1, s2));
     }
 
     @Test

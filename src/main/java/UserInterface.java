@@ -197,7 +197,8 @@ public class UserInterface {
         if (svar.equalsIgnoreCase("ja")) {
             int n;
             n = superheroDatabase.getSuperheroArrayList().indexOf(deletingSuperhelt);
-                superheroDatabase.getSuperheroArrayList().remove(n);
+
+            superheroDatabase.getSuperheroArrayList().remove(n);
 
         } else if (svar.equalsIgnoreCase("nej")) {
 
