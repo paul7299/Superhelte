@@ -176,7 +176,6 @@ public class UserInterface {
     }
 
 
-    // TODO
     public void menuSletSuperhelt() {
         // Find den superhero du vil slette
         System.out.println("\tSøge efter superhelt du vil SLETTE: ");
@@ -194,6 +193,7 @@ public class UserInterface {
         System.out.println("\tVil du slette denne superhero? Indtast ja / nej.");
         String svar = sc.nextLine();
 
+        // Spørg om du vil slette den fundne hero
         if (svar.equalsIgnoreCase("ja")) {
             int n;
             n = superheroDatabase.getSuperheroArrayList().indexOf(deletingSuperhelt);
