@@ -190,18 +190,16 @@ public class UserInterface {
             System.out.println("\tKunne ikke finde superhelten. \n");
         }
 
-        System.out.println("\tVil du slette denne superhero? Indtast ja / nej.");
+        System.out.println("\tVil du slette denne superhero? Indtast ja / nej. ");
         String svar = sc.nextLine();
 
         // Spørg om du vil slette den fundne hero
         if (svar.equalsIgnoreCase("ja")) {
             int n;
             n = superheroDatabase.getSuperheroArrayList().indexOf(deletingSuperhelt);
-
             superheroDatabase.getSuperheroArrayList().remove(n);
 
         } else if (svar.equalsIgnoreCase("nej")) {
-
         }
 
     }

@@ -7,12 +7,6 @@ public class Database {
     private ArrayList<Superhero> superheroArrayList = new ArrayList<>();
     private ArrayList<Superhero> soegeResultat = new ArrayList<>();
 
-
-    // Opretter superheroArray
-    private Superhero[] superheroArray = new Superhero[5];
-    int n = 0;
-
-
     // Opretter metode som opretter superhelt og lægger i arrayList
     public void tilfoejSuperhelt(String aliasNavn, String superhelteNavn, int oprindelsesÅr, boolean erMenneske,
                                  String superkraft, double styrke) {
@@ -37,17 +31,5 @@ public class Database {
         return null;
     }
 
-
-
-
-        /* Metode for at redigere superhelt
-        public void redigerSuperhelt(String aliasNavn, String superhelteNavn, int oprindelsesÅr, boolean erMenneske,
-        String superkraft, double styrke) {
-
-            Superhero superhelt = new Superhero(aliasNavn, superhelteNavn, oprindelsesÅr, erMenneske, superkraft, styrke);
-            superheroArrayList.add(superhelt);
-        }
-         */
-
-    }
+}
 
